@@ -66,4 +66,30 @@ ALTER TABLE `logging_event_exception`
 
 
 
+/*
+Operate Person:付陈林
+Operate Time:2017-6-5
+Operate Remark: wt_product_type 增加 department_id 字段
+Execute DataBase   develop
+*/
+ALTER TABLE `wt_product_type`
+  ADD COLUMN `department_id`  bigint(20) NULL COMMENT '部门id' AFTER `del_flag`;
 
+
+/*
+Operate Person:付陈林
+Operate Time:2017-6-5
+Operate Remark: wt_product_brand 增加 department_id 字段
+Execute DataBase   develop
+*/
+ALTER TABLE `wt_product_brand`
+  ADD COLUMN `department_id`  bigint(20) NULL COMMENT '部门id' AFTER `del_flag`;
+
+/*
+Operate Person:付陈林
+Operate Time:2017-6-5
+Operate Remark: wt_service_type 增加 department_id 字段
+Execute DataBase   develop
+*/
+ALTER TABLE `wt_service_type`
+  ADD COLUMN `department_id`  bigint(20) NULL COMMENT '部门id' AFTER `del_flag`;
