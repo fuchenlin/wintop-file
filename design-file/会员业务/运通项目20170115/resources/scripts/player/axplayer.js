@@ -34,7 +34,7 @@ function setUpController() {
     //in the page url
     //-----------------------------------------
     var _shouldSendVarsToServer = function () {
-        //If exception occurs (due to page in content frame being from a different domain, etc)
+        //If exception occurs (due to page in content frame being from a different model, etc)
         //then run the check without the url (which will end up checking against sitemap url)
         try {
             var mainFrame = document.getElementById("mainFrame");

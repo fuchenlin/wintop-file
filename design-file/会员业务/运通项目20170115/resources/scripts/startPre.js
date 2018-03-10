@@ -499,7 +499,7 @@ function setUpController() {
     //in the page url
     //-----------------------------------------
     var _shouldSendVarsToServer = function () {
-        //If exception occurs (due to page in content frame being from a different domain, etc)
+        //If exception occurs (due to page in content frame being from a different model, etc)
         //then run the check without the url (which will end up checking against sitemap url)
         try {
             var mainFrame = document.getElementById("mainFrame");
@@ -871,7 +871,7 @@ var BROWSER_VERSION = 5000;
         _messageCenter.dispatchMessage(message, data);
 
         $('iframe').each(function(index, frame) {
-            //try,catch to handle permissions error in FF when loading pages from another domain
+            //try,catch to handle permissions error in FF when loading pages from another model
             try {
                 if (frame.contentWindow.$axure && frame.contentWindow.$axure.messageCenter) {
                     frame.contentWindow.$axure.messageCenter.dispatchMessageRecursively(message, data);
